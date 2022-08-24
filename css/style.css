@@ -103,7 +103,7 @@
   animation-iteration-count: infinite;
 }
 .space {
-  background-image: url(/img/space.jpg);
+  background-image: url(http://127.0.0.1:5500/img/space.jpg);
   background-size: cover;
   padding: 100px;
   position: relative;
@@ -160,21 +160,34 @@
     left: 10%;
     z-index: 5;
   }
-  25% {
+  15% {
     top: -10%;
-    left: 45%;
-    z-index: 5; 
+    left: 35%;
   }
-  50% {
-    top: -25%;
-    left:  45%;
-    z-index: 2;
-    transform: scale(0.1);
+  30% {
+    top: -10%;
+    left: 40%;
+  }
+  45% {
+    top: -20%;
+    left: 44%;
+    z-index: 5;
+  }
+  60% {
+    top: -30%;
+    left: 44%;
+    z-index: 5;
   }
   75% {
-    top: -25%;
-    left: 8%;
+    top: -30%;
+    left: 40%;
+    z-index: 1;
+  }
+  90% {
+    top: -20;
+    left: 10%;
     z-index: 4;
+    
   }
   100% {
     top: -10%;
