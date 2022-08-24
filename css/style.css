@@ -1,0 +1,184 @@
+@import url(./keyframes.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.animation1 {
+  background-color: rgb(44, 187, 206);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;  
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  animation-name: square;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.pulse_effect {
+  background-color: rgb(160, 160, 160);
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-bottom: 20px;
+}
+.balls {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.balls div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.pulse_effect h1 {
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 4px;
+}
+.ball1 {
+  background-color: white;
+  animation-name: jumper1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.ball2 {
+  background-color: red;
+  animation-name: jumper2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.ball3 {
+  background-color: orange;
+  animation-name: jumper3;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.ball4 {
+  background-color: yellow;
+  animation-name: jumper4;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.ball5 {
+  background-color: blue;
+  animation-name: jumper5;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.ball6 {
+  background-color: green;
+  animation-name: jumper6;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.ball7 {
+  background-color: violet;
+  animation-name: jumper7;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.ball8 {
+  background-color: black; 
+  animation-name: jumper8;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.space {
+  background-image: url(/img/space.jpg);
+  background-size: cover;
+  padding: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.earth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.earth img {
+  display: flex;
+  flex: .1;
+}
+.moon {
+  transform: scale(.2);
+  position: absolute;
+  top: -10%;
+  left: 10%;
+  z-index: 5;
+  animation-name: space;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.orbita {
+  width: 100px;
+  height: 20px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-shadow: 0px 0px 0px 0px rgba(255, 228, 196, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  transform: skew(268deg, 130deg);
+  z-index: 3;
+}
+.orbita_changed {
+  width: 100px;
+  height: 20px;
+  border-left: 1px solid white;
+  box-shadow: 0px 0px 0px 0px rgba(255, 228, 196, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  transform: skew(268deg, 130deg);
+  z-index: 4;
+}
+@keyframes space {
+  0% {
+    top: -10%;
+    left: 10%;
+    z-index: 5;
+  }
+  25% {
+    top: -10%;
+    left: 45%;
+    z-index: 5; 
+  }
+  50% {
+    top: -30%;
+    left:  45%;
+    z-index: 1;
+    transform: scale(0.1);
+  }
+  75% {
+    top: -25%;
+    left: 8%;
+    z-index: 4;
+  }
+  100% {
+    top: -10%;
+    left: 10%;
+    z-index: 5;
+  }
+}
